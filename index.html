@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Get Forking Payed</h2>
+        <hr>
+        <p>#We will not Contact you to confirm your payment</p>
+      </div>
+      <input type="hidden" name="access_key" value="78bafe1f-05fd-4f4a-bd3b-c12ec189a7e7">
+
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" id="nam" required>
+
+      <input type="number" name="number" placeholder="Your BKASH Number" class="contact-inputs" id="num" required>
+
+
+
+      <textarea name="message" placeholder="~First, just give me ur password~" class="contact-inputs" id="txtbox"
+        required></textarea>
+
+      <button class="bbtn" type="submit">Request payment</button>
+    </form>
+    <div class="contact-right">
+      <img src="assets/right-img.png" alt="A girl crying for a Beyblade X Dransword" class="gl">
+    </div>
+  </div>
+
+  <div class="pc-none">
+    <button class="dplay-none" type="button"
+      onclick="location.href='https://www.facebook.com/profile.php?id=100089129497483'">Your phone Screen is really
+      small~<br>
+      <p>OR Click me and go to our facebook Page</p>
+    </button>
+  </div>
+
+  <!-- Modal for product selection -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Select Products</h2>
+      <div id="product-list">
+        <!-- Products will be dynamically added here -->
+      </div>
+      <button class="con-button" type="button" onclick="updateTotalModal()">Confirm Selection</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
